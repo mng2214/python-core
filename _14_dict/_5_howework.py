@@ -14,9 +14,7 @@ students = [
     {"name": "Elon", "surname": "Musk", "grades": None}
 ]
 
-
 # решение
-
 
 def get_best_students(*, students: list[dict]) -> list[dict]:
     best_students = []
