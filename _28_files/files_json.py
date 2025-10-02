@@ -4,7 +4,7 @@ import json
 data = {"name": "Mike", "age": 30, "city": "New York"}
 
 file = open('files/data.json', 'w')
-json.dump(data, file)
+json.dump(data, file, indent=4)
 file.close()
 
 file = open('files/data.json', 'r')

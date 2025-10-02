@@ -2,7 +2,7 @@ from telebot import TeleBot
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 import requests
 
-TOKEN = ""  # register at https://telegram.me/BotFather to get TOKEN
+TOKEN = "8098747519:AAGsco-GPIPAE20qbpd9M0AF3d0zRxotn28"  # register at https://telegram.me/BotFather to get TOKEN
 CRYPTO_NAME_TO_TICKER = {
     "Bitcoin": "BTCUSDT",
     "Ethereum": "ETHUSDT",
@@ -31,7 +31,7 @@ def send_price(message):
 
 
 def get_price_by_ticker(*, ticker: str) -> float:
-    endpoint = "https://api.binance.com/api/v3/ticker/price"
+    endpoint = "https://api.binance.us/api/v3/ticker/price"
     params = {
         'symbol': ticker,
     }
